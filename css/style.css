@@ -1,0 +1,43 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  margin-top: 250px;
+  margin-left: 20px;
+  animation-name: box-position;
+  animation-duration: 2500ms;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+@keyframes box-position {
+  0% {
+    left: 0;
+  }
+
+  25% {
+    transform: translateX(250%);
+    background-color: greenyellow;
+  }
+
+  50% {
+    transform: translate(235%, -200%);
+    background-color: yellow;
+  }
+
+  75% {
+    transform: translate(-35%, -200%);
+    left: 35px;
+    background-color: red;
+  }
+  100% {
+    left: 0;
+  }
+}
