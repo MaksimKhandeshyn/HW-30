@@ -15,6 +15,7 @@ html {
   animation-name: box-position;
   animation-duration: 2500ms;
   animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
   position: relative;
 }
 @keyframes box-position {
